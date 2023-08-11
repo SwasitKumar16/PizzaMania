@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.logo{
+    margin:21px 43px 1px 21px;
+    height: 70px;
+}
+.logo img{
+    height: 80px;
+    width: 80px;
+}
+#navbar{
+    position: relative;
+    top: 0px;
+
+}
+#navbar ul{
+    display: flex;
+    
+    
+}
+#navbar::before{ 
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.5;
+} 
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    text-decoration: none;
+    position: sticky;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    /* border: 2px solid red;  */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+#navbar ul li a:hover{
+   color: black;
+   background-color: white;
+
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 18px 200px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 600px;
+    text-align: center;
+}
+#home::before{
+    content: "";
+    background: url('https://images.unsplash.com/photo-1542834369-f10ebf06d3e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.87;
+    
+}
+.h-primary{
+    font-size: 4rem;
+    padding: 5px;
+    font-family: 'Pacifico', cursive;
+    
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 5px;
+    
+}
+#home p{
+    font-size: 2rem;
+    
+}
+.btn{
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 30px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:black;
+    color:white;
+
+}
+ .center{
+    text-align: center;
+ }
+.services-container{
+    background-color: black;
+    color:white
+}
+ #services{
+    margin: 12px 53px 0px 53px;
+    display: flex;
+    
+ }
+ #services .box{
+    border: 2px solid rgb(237, 134, 134);
+    padding: 22px;
+    margin: 10px;
+    background-color: rgb(188, 74, 74);
+    border-radius: 20px;
+ }
+#services .box img{
+    display: block;
+    margin: auto;
+ height: 241px;
+}
+#client-section{
+    height:344px ;
+    background-color: rgb(228, 220, 210);
+    color: black;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 50px;
+}
+#clients img{
+    height: 124px;
+
+}
+
+#contact{
+    position: relative;
+    height: 420px;
+    padding: 24px;
+    background-color: rgb(233, 136, 68);
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 20px;
+    width: 700px;
+    padding: 15px;
+    border: 7px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    margin: 3px auto;
+}
+.form-group label{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.form-group input{
+    text-align: justify;
+    font-size: 20px;
+    width: 250px;
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 3px auto;
+}
+
+.btnn{
+    position: relative;
+    left:110px ;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 17px;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+.btnn:hover{
+    background-color:black;
+    color:white;
+
+}
+
+
+ footer{
+    padding: 9px 20px;
+    font-size: 23px;
+    background-color: rgb(233, 136, 68);
+}
